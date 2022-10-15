@@ -1,0 +1,47 @@
+﻿@*@{ 
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}*@
+
+@{ 
+//int[] nums = (int[]) ViewData["Numbers"];
+//int[] nums = ViewBag.nums;
+}
+
+@*@model Book*@
+@*@model List<Book>*@
+@model HomeVM
+
+@{ 
+
+}
+
+<main>
+    @*@foreach (var item in nums)
+        {
+            <h1>@item</h1>
+        }*@
+
+    @*<h1>@ViewBag.fullName</h1>*@
+
+    @*<h1>@TempData["Name"]</h1>*@
+
+    <ul>
+        @foreach (var item in Model.Books)
+        {
+            <li>@item.Name</li>
+            <li>@item.AuthorName</li>
+            <li>@item.PublishDate</li>
+        }
+    </ul>
+
+    <h1>@Model.Car.Name</h1>
+
+  
+
+
+
+
+</main>
+    
+
+    
